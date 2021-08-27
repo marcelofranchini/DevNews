@@ -49,6 +49,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async context => {
+  // @ts-ignore
   const { slug } = context.params;
 
   const prismic = getPrismicClient();
@@ -60,6 +61,7 @@ export const getStaticProps: GetStaticProps = async context => {
     title: RichText.asText(response.data.title),
     content: RichText.asHtml(response.data.content),
     updatedAt: format(
+      // @ts-ignore
       new Date(response.last_publication_date),
       "d 'de' MMMM 'de' yyyy",
       { locale: ptBR },

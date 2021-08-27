@@ -1,6 +1,7 @@
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
+// @ts-expect-error
 const Modal = dynamic(() =>
   import('../../components/Modal').then(mod => mod.Modal),
   {
