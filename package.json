@@ -6,17 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
+    "@prismicio/client": "^5.1.0",
+    "@types/prismic-dom": "^2.1.1",
+    "date-fns": "^2.23.0",
+    "json-server": "^0.16.3",
     "next": "11.0.1",
+    "prismic-dom": "^2.2.6",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.37.5"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@testing-library/dom": "^8.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
     "@types/react": "17.0.16",
+    "babel-jest": "^27.0.6",
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.6",
+    "jest-dom": "^4.0.0",
+    "ts-jest": "^27.0.5",
     "typescript": "4.3.5"
   }
 }
